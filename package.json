@@ -1,0 +1,14 @@
+{
+  "name": "url-redirector",
+  "version": "1.0.0",
+  "description": "A small NodeJS app that redirects configurable URL paths to a FQDN",
+  "main": "golinks.js",
+  "scripts": {
+    "start": "node golinks.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
