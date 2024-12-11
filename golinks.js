@@ -21,7 +21,7 @@ app.use((req, res, next) => {
   if (fqdn) {
     res.redirect(fqdn);
   } else {
-    res.status(404).send('Not Found');
+    res.status(404).send({ "error": "not found, available urls are", "urls": lowerCaseUrlConfig});
   }
 });
 
