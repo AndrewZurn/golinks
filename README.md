@@ -23,16 +23,18 @@ npm install
 
 ## Configuration
 
-The URL paths and their corresponding FQDNs are configured in the `urlConfig` object within `golinks.js`.
+The URL paths and their corresponding FQDNs are configured in the `golinks.json` file. This file
+can be dynamically updated (not requiring a restart of the server for changes to the config to 
+take affect and be used by your browser when opening new/updated GoLinks).
 
 Example:
-```javascript
-const urlConfig = {
-  '/path1': 'https://example1.com',
-  '/path2': 'https://example2.com',
-  '/path3': 'https://example3.com',
-  '/path4/subpath1': 'https://example4.com',
-};
+```json
+{
+  "/path1": "https://example1.com",
+  "/path2": "https://example2.com",
+  "/path3": "https://example3.com",
+  "/path4/subpath1": "https://example4.com"
+}
 ```
 
 ## Usage
