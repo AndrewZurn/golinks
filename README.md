@@ -37,6 +37,9 @@ Example:
 }
 ```
 
+Simply update this file to specify the path (key) you would like to have the server redirect your
+browser to when you enter "go/(key)" into your browser bar.
+
 ## Usage
 
 To start the server, run:
