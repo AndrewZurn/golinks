@@ -1,0 +1,6 @@
+{
+  '/path1': 'https://example1.com',
+  '/path2': 'https://example2.com',
+  '/path3': 'https://example3.com',
+  '/path4/subpath1': 'https://example4.com',
+}
