@@ -74,17 +74,23 @@ Install pm2 (https://pm2.keymetrics.io/docs/usage/startup/):
 npm i -g pm2
 ```
 
-Setup your app to run at startup:
+Setup your app to run:
 ```
 pm2 start golinks.js
 ```
 
-Enable pm2 to run at startup:
+Enable pm2 to run at startup (following the output prompt to run an additional command
+to ensure it registers with your systems launch controller):
 ```
 pm2 startup
 ```
 
-To restart (for changes to take effect):
+And finally save the current apps pm2 is managing (so it restarts them after a reboot):
+```
+pm2 save
+```
+
+To restart your apps, you can use the following command:
 ```
 pm2 restart golinks
 ```
