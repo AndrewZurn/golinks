@@ -1,14 +1,13 @@
 {
-  "name": "url-redirector",
+  "name": "golinks",
   "version": "1.0.0",
-  "description": "A small NodeJS app that redirects configurable URL paths to a FQDN",
+  "description": "A small NodeJS app that redirects configurable URL paths to a well-known web resource",
   "main": "golinks.js",
   "scripts": {
     "start": "node golinks.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.21.1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Andrew Zurn"
 }
