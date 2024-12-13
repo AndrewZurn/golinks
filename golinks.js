@@ -11,9 +11,9 @@ app.use((req, res) => {
     Object.entries(goLinks).map(([key, value]) => [key.toLowerCase(), value])
   );
 
-  const fqdn = goLinks[req.path.toLowerCase()];
-  if (fqdn) {
-    res.redirect(fqdn);
+  const url = goLinks[req.path.toLowerCase()];
+  if (url) {
+    res.redirect(url);
   } else {
     res.status(404).send({ "error": "not found, available urls are", "urls": lowerCaseUrlConfig});
   }
