@@ -15,7 +15,7 @@ app.use((req, res) => {
   if (url) {
     res.redirect(url);
   } else {
-    res.status(404).send({ "error": "not found, available urls are", "urls": lowerCaseUrlConfig});
+    res.status(404).send({ "error": "not found, available urls are", "urls": goLinks});
   }
 });
 
