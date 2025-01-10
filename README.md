@@ -1,7 +1,7 @@
 # GoLinks (in NodeJS)
 
 A small NodeJS app that provide golinks type functionality locally by redirecting 
-configurable URL paths to a Fully Qualified Domain Name (FQDN).
+configurable URL paths (ie. go/home) to an well-known domain resource (ie. https://zurn.dev/home).
 
 ## Prerequisites
 
@@ -69,31 +69,7 @@ Add the following line to the bottom of the file:
 We can start the app using `pm2` (Process Manager for Node Apps) at startup time to ensure
 that the app will be up and running anytime we reboot.
 
-Install pm2 (https://pm2.keymetrics.io/docs/usage/startup/):
-```
-npm i -g pm2
-```
-
-Setup your app to run:
-```
-pm2 start golinks.js
-```
-
-Enable pm2 to run at startup (following the output prompt to run an additional command
-to ensure it registers with your systems launch controller):
-```
-pm2 startup
-```
-
-And finally save the current apps pm2 is managing (so it restarts them after a reboot):
-```
-pm2 save
-```
-
-To restart your apps, you can use the following command:
-```
-pm2 restart golinks
-```
+See the associated [blog post section](https://zurn.dev/blog/post/golinks/#taking-it-one-step-further) on setting up PM2.
 
 See https://stackoverflow.com/questions/60699738/how-to-start-node-js-server-on-each-system-boot-in-mac-and-windows for more details.
 
